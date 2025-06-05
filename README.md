@@ -95,6 +95,29 @@ uv run streamlit run frontend/app.py
 
 ---
 
+## 🖼️ Capturas de Pantalla
+
+### Backend (FastAPI)
+
+![Documentación interactiva de la API](images/backend1.png)
+*Documentación automática generada por FastAPI.*
+
+![Respuesta de ejemplo de la API](images/backend2.png)
+*Ejemplo de respuesta JSON del endpoint de clasificación.*
+
+### Frontend (Streamlit)
+
+- *Pantalla principal para ingresar y clasificar mensajes.*
+![Interfaz principal de la app](images/frontend1.png)
+*Visualización de la categoría y confianza, con colores y gráficos.*
+![Resultado de clasificación](images/frontend2.png)
+*Historial persistente en la sesión, con opción de limpiar.*
+![Historial de clasificaciones](images/frontend3.png)
+*Opciones para exportar el historial filtrado como PDF o CSV, con previsualización.*
+![Exportar informe PDF y CSV](images/frontend4.png)
+
+---
+
 ## 📦 Funcionalidades Destacadas
 - Clasificación Zero-Shot NLP (sin entrenamiento específico).
 - Visualización con colores y gráficos modernos (Plotly).
