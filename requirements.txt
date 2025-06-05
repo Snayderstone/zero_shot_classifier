@@ -1,0 +1,11 @@
+# Dependencias principales para el backend (FastAPI)
+dotenv>=0.9.9
+fastapi>=0.115.12
+fpdf2>=2.8.3
+plotly>=6.1.2
+polars>=1.30.0
+torch>=2.7.1
+transformers>=4.52.4
+uvicorn>=0.34.3
+# Si usas el frontend en el mismo entorno, puedes agregar:
+streamlit>=1.45.1
