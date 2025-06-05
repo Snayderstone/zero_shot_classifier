@@ -107,14 +107,17 @@ uv run streamlit run frontend/app.py
 
 ### Frontend (Streamlit)
 
-- *Pantalla principal para ingresar y clasificar mensajes.*
 ![Interfaz principal de la app](images/frontend1.png)
-*Visualización de la categoría y confianza, con colores y gráficos.*
+*Pantalla principal para ingresar y clasificar mensajes.*
+
 ![Resultado de clasificación](images/frontend2.png)
-*Historial persistente en la sesión, con opción de limpiar.*
+*Visualización de la categoría y confianza, con colores y gráficos.*
+
 ![Historial de clasificaciones](images/frontend3.png)
-*Opciones para exportar el historial filtrado como PDF o CSV, con previsualización.*
+*Historial persistente en la sesión, con opción de limpiar.*
+
 ![Exportar informe PDF y CSV](images/frontend4.png)
+*Opciones para exportar el historial filtrado como PDF o CSV, con previsualización.*
 
 ---
 
