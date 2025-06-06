@@ -41,16 +41,22 @@ zero_shot_classifier/
 ## ⚙️ Instalación y Configuración
 1. **Clona el repositorio:**
    ```bash
-   git clone <REPO_URL>
+   git clone https://github.com/Snayderstone/zero_shot_classifier.git
    cd zero_shot_classifier
    ```
-2. **Crea y activa un entorno virtual (opcional):**
+2. **Instala el gestor de paquetes uv:**
    ```bash
-   python -m venv .venv
-   source .venv/bin/activate  # Linux/macOS
-   .venv\Scripts\activate    # Windows
+   powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex" # para windows
+   curl -LsSf https://astral.sh/uv/install.sh | sh # para linux o mac
+   pip install uv #usando pip
+   uv --version # para verificar la instalación
    ```
-3. **Instala dependencias con [uv](https://github.com/astral-sh/uv):**
+3. **Crea y activa un entorno virtual (opcional):**
+   ```bash
+   uv venv .venv #crea un entorno virtual con uv
+   source .venv/bin/activate #activa el entorno virtual
+   ```
+4. **Instala dependencias con [uv](https://github.com/astral-sh/uv):**
    ```bash
    uv pip install -r pyproject.toml
    ```
@@ -59,7 +65,7 @@ zero_shot_classifier/
    uv sync
    ```
    *(uv detecta y usa pyproject.toml para gestionar dependencias, no uses requirements.txt)*
-4. **Configura el archivo `.env`:**
+5. **Configura el archivo `.env`:**
    Crea un archivo `.env` en la raíz del proyecto con:
    ```env
    API_URL=http://localhost:8000/clasificar/
@@ -72,15 +78,15 @@ zero_shot_classifier/
 ### 1. Backend (FastAPI)
 En la raíz del proyecto:
 ```bash
-uvicorn backend.main:app --reload
+uvicorn backend.main:app
 ```
 El backend estará disponible en `http://localhost:8000`.
 
 ### 2. Frontend (Streamlit)
 ```bash
-uv run streamlit run frontend/app.py
+streamlit run frontend/app.py
 ```
-*(O simplemente usa `streamlit run frontend/app.py` si ya tienes el entorno activado con uv)*
+El frontend estará disponible en `http://localhost:8501`
 
 ---
 
